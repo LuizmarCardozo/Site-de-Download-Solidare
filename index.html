@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solidare App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <img src="logo.png" alt="Solidare Logo" class="brand-logo" />
+        </div>
+
+        <nav class="nav">
+          <a href="#hero">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="btn btn-small btn-accent" href="APK/base.apk" download>
+          Download
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Menu mobile -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#hero">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contato">Contato</a>
+        <a href="#download" class="mobile-download">Download</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <div class="hero-icon">
+              <!-- Ícone/Logo redondo do app depois -->
+              <span>↗</span>
+            </div>
+            <h1>Solidare App</h1>
+            <p class="hero-subtitle">
+              Uma forma simples e organizada de gerenciar doações, famílias e
+              ações sociais em qualquer lugar, direto no seu celular.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                id="downloadButton"
+                href="APK/base.apk"
+                download
+              >
+                Baixar aplicativo
+              </a>
+              <a class="btn btn-ghost" href="#sobre"> Ver mais detalhes </a>
+            </div>
+
+            <p class="hero-note">
+              Compatível com dispositivos Android.
+              <span>Substitua este texto pela info real do seu app.</span>
+            </p>
+          </div>
+
+          <!-- Mockup do celular -->
+          <div class="hero-phone">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <!-- AQUI você coloca a imagem da tela do app depois -->
+                <div class="screen-placeholder">
+                  <img src="Tela.png" alt="Tela do Solidare" />
+                </div>
+              </div>
+              <div class="phone-footer"></div>
+            </div>
+            <div class="phone-shadow"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section class="section" id="sobre">
+        <div class="container section-inner">
+          <div class="section-text">
+            <h2>O que é o Solidare?</h2>
+            <p>
+              O Solidare é um aplicativo pensado para facilitar a gestão de
+              campanhas solidárias, distribuição de alimentos, cadastro de
+              famílias e controle de entregas, tudo em um único lugar.
+            </p>
+            <p>
+              Use este espaço para explicar melhor como o app funciona, quem
+              pode usar e quais problemas ele resolve no dia a dia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECURSOS -->
+      <section class="section section-alt" id="recursos">
+        <div class="container">
+          <h2 class="section-title">Recursos principais</h2>
+          <p class="section-subtitle">
+            Destaque aqui as funções mais importantes do Solidare.
+          </p>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <h3>Cadastro de famílias</h3>
+              <p>
+                Registre famílias de forma rápida e visualize histórico de
+                atendimentos diretamente pelo app.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Controle de doações</h3>
+              <p>
+                Acompanhe o que entra e o que sai do estoque, mantendo o
+                controle da distribuição de cestas e itens.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3>Relatórios rápidos</h3>
+              <p>
+                Gere relatórios básicos para entender o impacto das ações e
+                prestar contas com transparência.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DOWNLOAD -->
+      <section class="section" id="download">
+        <div class="container download-inner">
+          <div class="download-text">
+            <h2>Baixar o Solidare</h2>
+            <p>
+              Clique no botão abaixo para fazer o download do instalador do app.
+            </p>
+            <p class="download-warning">
+              <strong>Importante:</strong> Substitua o link abaixo pelo arquivo
+              ou página oficial de download do Solidare.
+            </p>
+
+            <a class="btn btn-primary btn-large" href="APK/base.apk" download>
+              Baixar agora
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Solidare App</span>
+        <span class="footer-right"
+          >Feito por Luizmar.Dev.</span
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
